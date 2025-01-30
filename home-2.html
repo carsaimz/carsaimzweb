@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarsaiMz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo_black.png" class="logo-light" alt="CarsaiMz">
+                <img src="assets/images/logo_white.png" class="logo-dark" alt="CarsaiMz">
+            </a>
+
+            <button class="btn btn-outline-primary" id="search-btn">
+                <i class="fas fa-search"></i>
+            </button>
+
+            <button id="dark-mode-toggle" class="btn btn-dark ms-2">
+                <i class="fas fa-moon"></i>
+            </button>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-home"></i> Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/sobre.html"><i class="fas fa-info-circle"></i> Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/aulas.html"><i class="fas fa-book"></i> Aulas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/cursos.html"><i class="fas fa-graduation-cap"></i> Cursos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/contacto.html"><i class="fas fa-envelope"></i> Contacte-nos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+ 
+
+    <!-- Conteúdo Expansível -->
+    <div class="container mt-4">
+         <!-- Seção Hero -->
+    <div  class="image-brand">
+        <img src="assets/images/logo_black.png" class="logo-light" alt="CarsaiMz">
+        <img src="assets/images/logo_white.png" class="logo-dark" alt="CarsaiMz">
+        <h1 class="mt-3">Bem-vindo ao CarsaiMz</h1> </a>
+        <p>A plataforma ideal para aprender inglês online de forma simples e intuitiva.</p>
+    </div>
+        <div class="accordion" id="contentAccordion">
+            
+            <!-- Categoria 1: Cursos e Aulas -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                        <i class="fas fa-graduation-cap me-2"></i> Cursos e Aulas
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#contentAccordion">
+                    <div class="accordion-body">
+                        <p>Explore nossos cursos e aulas gratuitas.</p>
+                        <a href="pages/aulas.html" class="btn btn-primary"><i class="fas fa-book"></i> Mini-Aulas</a>
+                        <a href="pages/cursos.html" class="btn btn-primary"><i class="fas fa-chalkboard-teacher"></i> Cursos</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categoria 2: Dicas e Tutoriais -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                        <i class="fas fa-lightbulb me-2"></i> Dicas e Tutoriais
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#contentAccordion">
+                    <div class="accordion-body">
+                        <p>Aprenda sobre Informática, IA e muito mais.</p>
+                        <a href="#" class="btn btn-primary"><i class="fas fa-laptop"></i> Informática</a>
+                        <a href="#" class="btn btn-primary"><i class="fas fa-robot"></i> Ferramentas de IA</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categoria 3: Sobre o CarsaiMz -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                        <i class="fas fa-info-circle me-2"></i> Sobre o CarsaiMz
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#contentAccordion">
+                    <div class="accordion-body">
+                        <p>O CarsaiMz é um projeto educacional inovador que oferece conteúdo gratuito focado no ensino da língua inglesa e outras áreas do conhecimento.</p>
+                        <a href="pages/sobre.html" class="btn btn-primary"><i class="fas fa-globe"></i> Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categoria 4: Contato e Equipe -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                        <i class="fas fa-users me-2"></i> Contato e Equipe
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#contentAccordion">
+                    <div class="accordion-body text-center">
+                        <img src="assets/images/founder.jpg" class="rounded-circle" alt="Carimo S. Mpinda" width="120">
+                        <h4 class="mt-3">Carimo S. Mpinda</h4>
+                        <p id="idade"></p>
+                        <div class="social-icons mt-2">
+                            <a href="#" class="me-2"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        <p class="mt-3">
+                            "Nossa missão é tornar a educação acessível a todos, eliminando barreiras e promovendo o conhecimento."
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="text-center mt-5 py-3">
+        <p>&copy; 2024 CarsaiMz. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script>
+        function calcularIdade() {
+            let anoNascimento = 2004;
+            let anoAtual = new Date().getFullYear();
+            document.getElementById("idade").innerText = "Idade: " + (anoAtual - anoNascimento) + " anos";
+        }
+        calcularIdade();
+    </script>
+
+</body>
+</html>
