@@ -1,0 +1,237 @@
+/* ================= Geral ================= */
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: white;
+    color: black;
+}
+
+/* ================= Navbar ================= */
+.navbar {
+    background-color: white;
+    transition: background-color 0.3s;
+  
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.body-content {
+    margin-top: 80px;
+}
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-brand {
+    color: inherit;
+}
+
+/* ================= Botão de Expansão da Navbar ================= */
+.navbar-toggler {
+    border-color: black;
+    background-color: white;
+    color: black;
+}
+
+.navbar-toggler-icon {
+    filter: black;
+}
+
+/* ================= Botão de Modo Escuro ================= */
+#dark-mode-toggle {
+    background: transparent;
+    border: none;
+    color: black;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+/* ================= Botão de Pesquisa ================= */
+#search-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: black;
+    transition: color 0.3s;
+}
+
+/* ================= Campo de Pesquisa ================= */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#search-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+/* ================= Modo Escuro ================= */
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+body.dark-mode .navbar {
+    background-color: black;
+}
+
+body.dark-mode .navbar-light .navbar-nav .nav-link,
+body.dark-mode .navbar-light .navbar-brand {
+    color: white;
+}
+
+body.dark-mode #search-btn {
+    color: white;
+}
+
+body.dark-mode #dark-mode-toggle {
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+body.dark-mode .navbar-toggler {
+    border-color: white;
+    background-color: black;
+    color: white;
+}
+
+body.dark-mode .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+body.dark-mode .search-bar {
+    background-color: black;
+}
+
+body.dark-mode #search-input {
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+}
+
+/* ================= Alteração do Logo ================= */
+.navbar-brand img {
+    height: 40px;
+    max-width: 250px;
+    object-fit: contain;
+}
+
+.logo-light {
+    display: block;
+}
+
+.logo-dark {
+    display: none;
+}
+
+body.dark-mode .logo-light {
+    display: none;
+}
+
+body.dark-mode .logo-dark {
+    display: block;
+}
+
+/* ================= Cor do Placeholder ================= */
+body.dark-mode ::placeholder {
+    color: white;
+}
+
+body.dark-mode #search-input::placeholder {
+    color: white;
+}
+
+/* ================= Estilos para o Formulário de Registro ================= */
+.container {
+    max-width: 600px;
+    margin: 10px auto;
+    text-align: justify;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form input {
+    margin-bottom: 15px;
+}
+
+form input[type="email"],
+form input[type="password"] {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    font-size: 1.2rem;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+form p {
+    text-align: center;
+}
+
+form p a {
+    color: #007bff;
+}
+
+form p a:hover {
+    text-decoration: underline;
+}
+
+/* ================= Modo Escuro - Formulário ================= */
+body.dark-mode .container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+body.dark-mode form {
+    background-color: black;
+}
+
+.image-brand img {
+    max-width: 250px;
+    object-fit: contain;
+    margin: 10px auto;
+}
+
+body.dark-mode .image-brand img {
+    max-width: 250px;
+    object-fit: contain;
+    margin: 10px auto;
+}

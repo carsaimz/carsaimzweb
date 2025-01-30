@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços - CarsaiMz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href=../#>
+                <!-- Logo para modo claro (visível por padrão) -->
+                <img src="../images/logo_black.png" class="logo-light" alt="CarsaiMz">
+                <!-- Logo para modo escuro -->
+                <img src="../assets/images/logo_white.png" class="logo-dark" alt="CarsaiMz">
+            </a>
+
+            <!-- Botão de Pesquisa -->
+            <button class="btn btn-outline-primary" id="search-btn">
+                <i class="fas fa-search"></i>
+            </button>
+
+            <!-- Botão de Modo Escuro -->
+            <button id="dark-mode-toggle" class="btn btn-dark ms-2">
+                <i class="fas fa-moon"></i>
+            </button>
+
+            <!-- Botão de Expansão -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href=../#><i class="fas fa-home"></i> Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre.html"><i class="fas fa-info-circle"></i> Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aulas.html"><i class="fas fa-book"></i> Aulas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cursos.html"><i class="fas fa-graduation-cap"></i> Cursos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projetos.html"><i class="fas fa-project-diagram"></i> Outros Projetos</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="servicos.html"><i class="fas fa-tools"></i> Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html"><i class="fas fa-envelope"></i> Contacte-nos</a></li>
+                    <li class="nav-item" id="login-item"><a class="nav-link" href="login.html"><i class="fas fa-sign-in-alt"></i> Iniciar Sessão</a></li>
+                    <li class="nav-item d-none" id="conta-item"><a class="nav-link" href="conta.html"><i class="fas fa-user"></i> Minha Conta</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Barra de Pesquisa -->
+    <div id="search-bar">
+        <input type="text" id="search-input" class="form-control" placeholder="Pesquisar...">
+    </div>
+
+    <!-- Container Principal -->
+    <main class="container mt-4">
+        <h1 class="text-center">Serviços - CarsaiMz</h1>
+        <p class="text-center">Oferecemos uma variedade de serviços que ajudam você a aprender e a melhorar suas habilidades em inglês e em outros projetos.</p>
+        
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Consultoria de Ensino de Inglês</h3>
+                <p>Oferecemos consultoria personalizada para aprender inglês de forma eficiente e rápida, com programas focados em suas necessidades.</p>
+                <a href="consultoria.html" class="btn btn-primary">Saiba Mais</a>
+            </div>
+            <div class="col-md-4">
+                <h3>Desenvolvimento de Software</h3>
+                <p>Somos especialistas no desenvolvimento de soluções personalizadas, incluindo sistemas e aplicativos para diferentes plataformas.</p>
+                <a href="desenvolvimento.html" class="btn btn-primary">Saiba Mais</a>
+            </div>
+            <div class="col-md-4">
+                <h3>Treinamentos e Workshops</h3>
+                <p>Oferecemos treinamentos e workshops sobre diversos tópicos, incluindo marketing digital, habilidades de comunicação e muito mais.</p>
+                <a href="treinamentos.html" class="btn btn-primary">Saiba Mais</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/scripts.js"></script>
+</body>
+</html>

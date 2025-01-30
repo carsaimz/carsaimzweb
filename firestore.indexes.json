@@ -1,0 +1,37 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "usu%C3%A1rios",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "usuarios",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "nome",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "senha",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "Usu%C3%A1rios",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "User",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Password",
+          "order": "ASCENDING"
+        }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}
